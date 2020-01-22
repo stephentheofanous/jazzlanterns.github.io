@@ -5,20 +5,20 @@ var aboot =document.getElementById("about");
 
 function dft() {
  
-  body.style.background = "url('img/lantern_trans.png') center 91% / 90px 165px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 0.5%,  rgba(0,0,0,0.9) 30%)";
+  body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 0.5%,  rgba(0,0,0,0.9) 30%)";
   aboot.style.background = "radial-gradient(circle at 50% -30%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 30%)";
 }
 
 function dim() {
  
-  body.style.background = "url('img/lantern_trans.png') center 91% / 90px 165px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 0.5%,  rgba(0,0,0,0.9) 20%)";
+  body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 0.5%,  rgba(0,0,0,0.9) 20%)";
   aboot.style.background = "radial-gradient(circle at 50% -50%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 30%)";
   // setTimeout(function() { glow(); }, 1000);
 }
 
 function glow() {
   
-  body.style.background = "url('img/lantern_trans.png') center 91% / 90px 165px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 2%,  rgba(0,0,0,0.9) 40%)";
+  body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 2%,  rgba(0,0,0,0.9) 40%)";
   aboot.style.background = "radial-gradient(circle at 50% -30%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 40%)";
 }
 
@@ -54,7 +54,7 @@ function glow() {
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 150) {
       $("#mainNav").addClass("navbar-shrink"); 
-      $(dim);
+      $(glow);
     } else {
       $("#mainNav").removeClass("navbar-shrink"); 
       $(dft);
