@@ -163,7 +163,8 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   padding-top: 8rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+  /*background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);*/
+  background: "url('img/inst.jpg') left 50% / 290px 381.6px no-repeat, url('img/sticks.jpg') right 50% / 254px 381.6px no-repeat";
 }
 
 .about-section p {
