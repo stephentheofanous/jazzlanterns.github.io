@@ -1,25 +1,29 @@
 // MY HOVER BG GRADIENT
 var body = document.getElementById("my-gradient");
 var aboot =document.getElementById("about");
+var projex =document.getElementById("projects");
 
 function dft() {
  
-  body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 0.5%,  rgba(0,0,0,0.9) 30%)";
-  aboot.style.background = "radial-gradient(circle at 50% -30%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 30%)";
+  body.style.backgroundImage = "url('img/trio.jpg')";
+  body.style.backgroundSize = "cover";
+  aboot.style.background = "url('img/inst.jpg') left 50% / 290px 381.6px no-repeat, url('img/sticks.jpg') right 50% / 254px 381.6px no-repeat";
+  projex.style.background = "rgba(0,0,0,0.9)";
 }
 
-function dim() {
+// , rgba(0,0,0,0.9)
+
+// function dim() {
  
-  body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 0.5%,  rgba(0,0,0,0.9) 20%)";
-  aboot.style.background = "radial-gradient(circle at 50% -50%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 30%)";
-  // setTimeout(function() { glow(); }, 1000);
-}
+//   body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 0.5%,  rgba(0,0,0,0.9) 20%)";
+//   aboot.style.background = "radial-gradient(circle at 50% -50%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 30%)";
+// }
 
-function glow() {
+// function glow() {
   
-  body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 2%,  rgba(0,0,0,0.9) 40%)";
-  aboot.style.background = "radial-gradient(circle at 50% -30%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 40%)";
-}
+//   body.style.background = "url('img/lantern_trans.png') center 91% / 81px 148.5px no-repeat, radial-gradient(circle at 50% 84%, rgba(255,249,162,0.9) 0%, rgba(255,97,0,0.9) 2%,  rgba(0,0,0,0.9) 40%)";
+//   aboot.style.background = "radial-gradient(circle at 50% -30%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 40%)";
+// }
 
 (function($) {
   "use strict"; // Start of use strict
@@ -49,14 +53,14 @@ function glow() {
     offset: 100 
   });
 
-  // Collapse Navbar
+  // MY SCROLL TRIGGERS
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 150) {
       $("#mainNav").addClass("navbar-shrink"); 
-      $(glow);
+      // $(glow);
     } else {
       $("#mainNav").removeClass("navbar-shrink"); 
-      $(dft);
+      // $(dft);
     }
   };
 

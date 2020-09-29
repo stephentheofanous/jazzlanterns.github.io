@@ -1,5 +1,10 @@
+/*!
+ * Start Bootstrap - Grayscale v5.0.1 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
 #mainNav {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   min-height: 56px;
   background-color: #fff;
@@ -8,7 +13,7 @@
 #mainNav .navbar-toggler {
   font-size: 100%;
   padding: 0.75rem;
-  color: #64a19d;
+  color: rgb(20,0,0);
   border: 1px solid #64a19d;
 }
 
@@ -17,13 +22,13 @@
 }
 
 #mainNav .navbar-brand {
-  color: #161616;
+  color: rgb(20,0,0);
   font-weight: 700;
   padding: .9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
+  color: rgb(20,0,0);
   outline: none;
   background-color: transparent;
 }
@@ -45,32 +50,29 @@
     padding: 0.5rem 0;
 /*    padding: 0.5rem 0.5rem 0.25rem;*/
     border-bottom: 0.25rem solid transparent;
-    color: rgba(255, 255, 255, 0.5);
-    opacity: 0;
+    color: rgb(20,0,0, 0.8);
   }
   #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(20,0,0, 1);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 1rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.8);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 1);
   }
   #mainNav .nav-link:active {
     color: white;
   }
-  #mainNav.navbar-shrink{
-    background-color: #f9f9f9;
-/*    background-image: linear-gradient(rgba(255,97,0,0.9) 0%,  #fff 30%);*/
-  }
-
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+/*    background-color: rgba(0, 0, 0, 1);
+*/  }
   #mainNav.navbar-shrink .navbar-brand {
     /*color: #161616;*/
     color: rgb(20,0,0);
-    opacity: 1;
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
     color: #161616;
@@ -84,7 +86,7 @@
   #mainNav.navbar-shrink .nav-link:hover {
 /*    color: #64a19d;
 */  
-  color: #64a19d;
+  color: #467370;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
@@ -98,7 +100,7 @@
 }
 
 #bigtern {
-  width:81px;
+  width:90px;
   opacity:0;
   /*transform: scale(2);*/
   }
@@ -114,7 +116,7 @@
 
 .masthead h1 {
   /*font-family: 'Varela Round';*/
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -124,7 +126,7 @@
 }
 
 .masthead h2 {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   max-width: 20rem;
   font-size: 1rem;
 }
@@ -153,7 +155,7 @@
 }
 
 .about-section {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   padding-top: 8rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
@@ -164,9 +166,9 @@
 }
 
 .projects-section {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section .featured-text {
@@ -196,13 +198,59 @@
   }
 }
 
-.setlists-section {
-  font-family: 'Noto Serif', serif;
+.headshots-section {
+  font-family: 'Montserrat', sans-serif;
   padding: 6rem 0;
 }
 
+.headshots-section .featured-text {
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;  
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (min-width: 992px) {
+  .headshots-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.headshots-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .headshots-section .project-text {
+    padding: 5rem;
+  }
+  .headshots-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+.setlists-section {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0rem 0;
+}
+
 .setlists-section .featured-text {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 2rem;
 }
 
@@ -272,7 +320,7 @@
 #setlist_table2 tr:nth-child(odd){background-color: #f2f2f2;}
 
 .contact-section {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 5rem 0 0;
   background-image: radial-gradient(circle at 50% 150%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 40%);
 }
@@ -284,7 +332,7 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Noto Serif';
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -319,7 +367,7 @@
 
 body {
   /*font-family: 'Nunito';*/
-  font-family: 'Noto Serif';
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.0625em;
 }
 
@@ -346,7 +394,6 @@ a:focus, a:hover {
 }
 
 footer {
-  padding: 3rem 0;
-/*  background-color: black;
-*/  background-image: radial-gradient(circle at 50% -180%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 40%);
+  padding: 5rem 0;
+  background-image: radial-gradient(circle at 50% -50%, rgba(255,97,0,0.9) 0%,  rgba(0,0,0,0.9) 30%);
 }
