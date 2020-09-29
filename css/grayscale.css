@@ -81,7 +81,7 @@
   #mainNav.navbar-shrink .nav-link {
     /*color: #161616;*/
     color: #fff;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
@@ -108,14 +108,19 @@
 
 .masthead {
   position: relative;
+/*  padding: 15rem 0;*/
   width: 100%;
   height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: url("../img/trio.jpg");
-  background-position: center;
+/*  background: url("../img/trio.jpg");*/
+/*  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: scroll;*/
+  background-size: cover;
+}
+
+.bgimg {
+  width: 100%;
+  height: auto;
   background-size: cover;
 }
 
@@ -164,7 +169,7 @@
   font-size: 1rem;
   padding-top: 8rem;
   /*background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);*/
-  background: url("../img/inst.jpg") left 50% / 290px 381.6px no-repeat, url("../img/sticks.jpg") right 50% / 254px 381.6px no-repeat;
+  /*background: url("../img/inst.jpg") left 50% / 290px 381.6px no-repeat, url("../img/sticks.jpg") right 50% / 254px 381.6px no-repeat;*/
 }
 
 .about-section p {
@@ -175,6 +180,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   padding: 5rem 0;
+  background: rgba(0,0,0,0.9);
 }
 
 .projects-section .featured-text {

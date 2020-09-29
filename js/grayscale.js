@@ -1,19 +1,7 @@
 // MY HOVER BG GRADIENT
-var body = document.getElementById("my-gradient");
-var aboot =document.getElementById("about");
-var projex =document.getElementById("projects");
-
-function dft() {
- 
-/*  body.style.backgroundImage = "url('img/trio.jpg')";
-  body.style.backgroundSize = "cover";*/
-
-/*  aboot.style.background = "url('img/inst.jpg') left 50% / 290px 381.6px no-repeat, url('img/sticks.jpg') right 50% / 254px 381.6px no-repeat";*/
-  
-  projex.style.background = "rgba(0,0,0,0.9)";
-}
-
-// , rgba(0,0,0,0.9)
+// var body = document.getElementById("my-gradient");
+// var aboot =document.getElementById("about");
+// var projex =document.getElementById("projects");
 
 (function($) {
   "use strict"; // Start of use strict
