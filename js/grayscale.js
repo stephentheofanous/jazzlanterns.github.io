@@ -5,11 +5,12 @@ var projex =document.getElementById("projects");
 
 function dft() {
  
-  // body.style.backgroundImage = "url('img/trio.jpg') center 100% no-repeat";
-  // body.style.backgroundSize = "cover";
-
-  body.style.background = "url('img/trio.jpg') no-repeat";
+  body.style.backgroundImage = "url('img/trio.jpg')";
   body.style.backgroundSize = "cover";
+
+/*  body.style.background = "url('img/trio.jpg') no-repeat";
+  body.style.backgroundSize = "cover";*/
+
   aboot.style.background = "url('img/inst.jpg') left 50% / 290px 381.6px no-repeat, url('img/sticks.jpg') right 50% / 254px 381.6px no-repeat";
   projex.style.background = "rgba(0,0,0,0.9)";
 }
